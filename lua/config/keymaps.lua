@@ -87,7 +87,7 @@ Keymap("n", "<leader>zF", ":%g/^{/ normal! zf%<CR>", { noremap = true, silent = 
 -- end
 
 Keymap("n", "<F7>", ":cn<cr>")
-Keymap("n", "<F19>", ":cprev<cr>")
+Keymap("n", "<F19>", ":cprev<cr>")  -- F19 -> S-F7
 
 -- ---------- 插件 ---------- ---
 
@@ -95,8 +95,8 @@ Keymap("n", "<F19>", ":cprev<cr>")
 Keymap("n", "<F10>", ":ClangdSwitchSourceHeader<CR>")
 
 
-Keymap("i", "<C-j>", "copilot#Accept('<CR>')",
-  { noremap = true, expr = true, silent = true, replace_keycodes = false })
+-- Keymap("i", "<C-j>", "copilot#Accept('<CR>')",
+  -- { noremap = true, expr = true, silent = true, replace_keycodes = false })
 -- local map = function (type, key, value, opts)
 --   local options = { noremap = true }
 --   if opts then options = vim.tbl_extend('force', options, opts) end
@@ -107,4 +107,4 @@ Keymap("i", "<C-j>", "copilot#Accept('<CR>')",
 
 
 -- other category
-Keymap('n', '<leader>ot', ':ToggleTerm<CR>')
+-- Keymap('n', '<leader>ot', ':ToggleTerm<CR>')
