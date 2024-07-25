@@ -77,7 +77,6 @@ local options = {
 
 	-- 文件编码
 	encoding = "utf-8",
-	fileencoding = "utf-8",
 
 	swapfile = false,
 	autoread = true,
@@ -89,6 +88,13 @@ local options = {
 
 for k, v in pairs(options) do
 	vim.opt[k] = v
+end
+
+
+if vim.bo.modifiable then
+  vim.opt.fileencoding = "utf-8"
+else
+  print("current buffer is not modifiable, skip setting fileencoding to utf-8")
 end
 
 -- commands
