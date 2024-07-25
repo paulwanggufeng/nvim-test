@@ -13,9 +13,8 @@ return {
     direction = "horizontal",
   },
   keys = {
-    { "<leader>Tb", "<cmd>lua ToggleTerm.bashtop()<cr>", "Bashtop" },
-    { "<leader>Tl", "<cmd>lua ToggleTerm.lazygit()<cr>", "LazyGit" },
-    { "<leader>Tm", "<cmd>lua ToggleTerm.neomutt()<cr>", "Neomutt" },
-    { "<leader>Tr", "<cmd>lua ToggleTerm.ranger()<cr>",  "Ranger" },
+    -- { "<leader>Tb", "<cmd>lua ToggleTerm.bashtop()<cr>", "Bashtop" },
+    -- { "<leader>Tl", "<cmd>lua ToggleTerm.lazygit()<cr>", "LazyGit" },
+    -- { "<leader>Tm", "<cmd>lua ToggleTerm.neomutt()<cr>", "Neomutt" },
   },
 }

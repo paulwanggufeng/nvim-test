@@ -1,4 +1,5 @@
 return {
+  -- 自动反转当前值
   "nguyenvukhang/nvim-toggler",
   enabled = true,
   event = { "BufReadPost", "BufNewFile" },
